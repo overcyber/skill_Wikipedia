@@ -2,14 +2,6 @@
 
 [![Continous Integration](https://gitlab.com/project-alice-assistant/skills/skill_Wikipedia/badges/master/pipeline.svg)](https://gitlab.com/project-alice-assistant/skills/skill_Wikipedia/pipelines/latest)
 
-### Download
-
-##### > WGET method
-```bash
-wget http://skills.projectalice.ch/Wikipedia \
--O ~/ProjectAlice/system/skillInstallTickets/Wikipedia.install
-```
-
 ### Description
 Allows one to find informations about a topic on wikipedia
 
