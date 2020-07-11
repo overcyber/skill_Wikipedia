@@ -3,8 +3,7 @@ from wikipedia import wikipedia
 from core.base.model.Intent import Intent
 from core.base.model.AliceSkill import AliceSkill
 from core.dialog.model.DialogSession import DialogSession
-from core.util.Decorators import IntentHandler
-from core.util.ContextManagers import Online
+from core.util.Decorators import IntentHandler, Online
 from core.ProjectAliceExceptions import OfflineError
 
 
@@ -34,6 +33,7 @@ class Wikipedia(AliceSkill):
 	@IntentHandler('DoSearch')
 	@IntentHandler('UserRandomAnswer', isProtected=True, requiredState='whatToSearch')
 	@IntentHandler('SpellWord', isProtected=True, requiredState='whatToSearch')
+	@Online
 	def searchIntent(self, session: DialogSession):
 		search = self._extractSearchWord(session)
 		if not search:
@@ -43,10 +43,7 @@ class Wikipedia(AliceSkill):
 		wikipedia.set_lang(self.LanguageManager.activeLanguage)
 
 		try:
-			with Online():
-				result = wikipedia.summary(search, sentences=3)
-		except OfflineError:
-			self.endDialog(sessionId=session.sessionId, text=self.randomTalk('offline', skill='system'))
+			result = wikipedia.summary(search, sentences=3)
 		except wikipedia.DisambiguationError as e:
 			self.logWarning(msg='Ambiguous result')
 			self._whatToSearch(session, 'ambiguous')
