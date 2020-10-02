@@ -1,7 +1,5 @@
 {
 	"skill": "Wikipedia",
-	"icon": "box",
-	"description": "Allows one to find informations about a topic on wikipedia",
 	"slotTypes": [
 		{
 			"name": "SearchEngine",
@@ -21,7 +19,6 @@
 	"intents": [
 		{
 			"name": "DoSearch",
-			"description": "",
 			"enabledByDefault": true,
 			"utterances": [
 				"i need some online info about {finland:=>What}",
