@@ -62,14 +62,12 @@
 			"slots": [
 				{
 					"name": "Engine",
-					"description": null,
 					"required": false,
 					"type": "SearchEngine",
 					"missingQuestion": ""
 				},
 				{
 					"name": "What",
-					"description": null,
 					"required": false,
 					"type": "Alice/RandomWords",
 					"missingQuestion": ""
