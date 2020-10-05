@@ -31,8 +31,8 @@ class Wikipedia(AliceSkill):
 
 
 	@IntentHandler('DoSearch')
-	@IntentHandler('UserRandomAnswer', isProtected=True, requiredState='whatToSearch')
-	@IntentHandler('SpellWord', isProtected=True, requiredState='whatToSearch')
+	@IntentHandler('UserRandomAnswer', requiredState='whatToSearch')
+	@IntentHandler('SpellWord', requiredState='whatToSearch')
 	@Online
 	def searchIntent(self, session: DialogSession):
 		search = self._extractSearchWord(session)
