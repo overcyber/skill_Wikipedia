@@ -26,7 +26,8 @@ class Wikipedia(AliceSkill):
 			sessionId=session.sessionId,
 			text=self.randomTalk(text=question, replace=[search]),
 			intentFilter=[Intent('UserRandomAnswer'), Intent('SpellWord')],
-			currentDialogState='whatToSearch'
+			currentDialogState='whatToSearch',
+			probabilityThreshold=0.05
 		)
 
 
@@ -41,7 +42,6 @@ class Wikipedia(AliceSkill):
 			return
 
 		wikipedia.set_lang(self.LanguageManager.activeLanguage)
-
 		try:
 			result = wikipedia.summary(search, sentences=3)
 		except wikipedia.DisambiguationError as e:

@@ -35,7 +35,9 @@
 				"trouve moi des infos sur internet",
 				"j'ai besoin d'une information",
 				"cherche sur internet",
-				"trouve sur le net"		
+				"trouve sur le net",
+				"recherche {wiki:=>Engine} sur {rainettes:=>What}",
+				"rechercher {wiki:=>Engine} des informations sur {Australie:=>What}"
 			],
 			"slots": [
 				{
