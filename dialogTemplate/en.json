@@ -50,7 +50,9 @@
 				"can you check something on {wikipedia:=>Engine}",
 				"can search informations on {wikipedia:=>Engine}",
 				"could you search some info online",
-				"can you search some informations online"
+				"can you search some informations online",
+				"search {wiki:=>Engine} about {tree frogs:=>What}",
+				"search {wiki:=>Engine} for info about {Australia:=>What}"
 			],
 			"slots": [
 				{

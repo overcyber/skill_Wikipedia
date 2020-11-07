@@ -1,13 +1,14 @@
 {
     "name": "Wikipedia",
-    "version": "1.1.11",
+    "version": "1.1.12",
     "icon": "fab fa-wikipedia-w",
     "category": "information",
     "author": "Psychokiller1888",
     "maintainers": [
         "Jierka",
         "maxbachmann",
-        "philipp2310"
+        "philipp2310",
+        "lazza"
     ],
     "desc": "Allows one to find informations about a topic on wikipedia.",
     "aliceMinVersion": "1.0.0-b3",
