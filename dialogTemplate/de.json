@@ -58,8 +58,8 @@
 				"was für infos von {wikipedia:=>Engine} hast du über {Mäuse:=>What}",
 				"gib mir mal ein paar fakten über {Ritter:=>What}",
 				"bitte schau nach informationen über {Snickers:=>What} auf {wikipedia:=>Engine}",
-				"search {wiki:=>Engine} about {tree frogs:=>What}",
-				"search {wiki:=>Engine} for info about {Australia:=>What}"
+				"Suche {wiki:=> Engine} nach {Laubfröschen:=> What}",
+				"Suche in {wiki:=> Engine} nach Informationen über {Australia:=> What}"
 			],
 			"slots": [
 				{
