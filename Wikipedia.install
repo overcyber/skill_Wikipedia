@@ -1,6 +1,6 @@
 {
     "name": "Wikipedia",
-    "version": "1.1.12",
+    "version": "2.0.0",
     "icon": "fab fa-wikipedia-w",
     "category": "information",
     "author": "Psychokiller1888",
@@ -10,12 +10,11 @@
         "philipp2310",
         "lazza"
     ],
-    "desc": "Allows one to find informations about a topic on wikipedia.",
+    "desc": "Allows one to find information about a topic on wikipedia.",
     "aliceMinVersion": "1.0.0-b3",
     "systemRequirements": [],
     "pipRequirements": [
-        "wikipedia",
-        "BeautifulSoup4==4.6.3"
+        "mediawikiapi"
     ],
     "conditions": {
         "lang": [

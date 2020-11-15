@@ -9,5 +9,10 @@
 	],
 	"ambiguous": [
 		"Ich habe viele Ergebnisse für diese Suche gefunden. Bitte sei genauer oder versuche den Suchbegriff zu buchstabieren."
-	]
+	],
+	"dialogMessage1": {
+		"default": [
+			"That search was too vague but i found a possible alternative called. {0}"
+		]
+	}
 }
