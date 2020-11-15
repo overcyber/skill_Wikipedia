@@ -56,8 +56,11 @@ class Wikipedia(AliceSkill):
 		mediawikiapi = MediaWikiAPI()
 		# set language of the results
 		mediawikiapi.config.language = self.LanguageManager.activeLanguage
+
+		# Debug code for dev
 		if self._devDebug:
 			self.logInfo(f'User request = {search}')
+
 		# Store the top 5 titles of the requested search (5 reduces chances of index error)
 		self._top5Results = mediawikiapi.search(search, results=5)
 		# set a index value for iterating through a list in the dialogs
@@ -103,8 +106,10 @@ class Wikipedia(AliceSkill):
 
 
 	def sortThroughResults(self, wikiInstance, index):
+		""" Search through summary's, remove results that may cause error and return good result"""
 		errorMsg = ""
 		resultSummary = ""
+
 		while index <= 4:
 			try:
 				resultSummary = wikiInstance.summary(self._top5Results[index], sentences=self.getConfig('maxSentences'))
@@ -124,6 +129,7 @@ class Wikipedia(AliceSkill):
 
 
 	def sayAlternatives(self, alternatives: str):
+		"""Tell user a alternative search"""
 		self.say(
 			text=self.randomTalk(text="dialogMessage1", replace=[alternatives]),
 			canBeEnqueued=False
@@ -135,9 +141,12 @@ class Wikipedia(AliceSkill):
 			text=self._resultSummary
 		)
 		self.endSession(sessionId=session.sessionId)
+
 		if self._alternatveResultUsed:
 			index += 2
+
 		index += 1
+
 		if index <= len(self._top5Results):
 			message = f'You may also be interested in {self._top5Results[index]}'
 			self.ThreadManager.doLater(
