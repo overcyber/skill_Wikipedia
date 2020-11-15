@@ -17,7 +17,7 @@ class Wikipedia(AliceSkill):
 		self._resultSummary = ""
 		self._top5Results = list()
 		self._alternatveResultUsed = False
-		self._devDebug = False
+		self._devDebug = True
 		super().__init__()
 
 
@@ -117,8 +117,8 @@ class Wikipedia(AliceSkill):
 				else:
 					index = 5
 
-			if errorMsg:
-				self.logWarning(f'Skipping over this error message {errorMsg}')
+		if errorMsg:
+			self.logWarning(f'Skipping over this error message >> "{errorMsg}"... searching for alternatives ')
 
 		return resultSummary
 
