@@ -15,5 +15,10 @@
 		"default": [
 			"J'ai trouvé plusieurs résultats pour cette recherche. Essaie d'être plus précis ou d'épeller le mot"
 		]
+	},
+	"dialogMessage1": {
+		"default": [
+			"That search was too vague but i found a possible alternative called. {0}"
+		]
 	}
 }

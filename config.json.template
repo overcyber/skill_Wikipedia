@@ -1,0 +1,8 @@
+{
+	"maxSentences": {
+		"defaultValue": 2,
+		"dataType": "integer",
+		"isSensitive": false,
+		"description": "Maximun amount of sentences returned"
+	}
+}
