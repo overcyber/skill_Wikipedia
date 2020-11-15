@@ -23,11 +23,27 @@ when Alice asks
  
  - "sure what would you like me search for" ? 
 
-Either say your search item {EG: Blue cheese"} or you can also spell the word to her that you want
-to search for.
+Say your search item {EG: Blue cheese"}
 
 ## Skill settings
 
 Select how many sentences you want returned by going to the skill settings and adjusting "maxSentences" value
 default is 2
 
+**Known bad results**. 
+
+Often due to the way certain wiki pages are written, you will come across the odd strange result. 
+But over all the percentage of good results out weigh the bad results
+
+results such as :
+
+- === Heading === will make some if not all TTS engines say equals equals equals or any other random charactor
+ based line
+
+- Some pages are reported as no page id despite the fact they exist. such as a search for "Henry Ford" 
+If you strike a un expected page. try asking a different way for the desired page.
+
+- Some suggested alternatives also don't seem to be a good alternative. However alot do. 
+So on the strange alternatives have a go at asking for them, and see where it takes you. 
+Might take you from looking up why the sky is blue to what cows eat in egypt *shrug*. Who knows, 
+just enjoy the journey :)
