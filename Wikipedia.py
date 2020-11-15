@@ -17,7 +17,7 @@ class Wikipedia(AliceSkill):
 		self._resultSummary = ""
 		self._top5Results = list()
 		self._alternatveResultUsed = False
-		self._devDebug = True
+		self._devDebug = False
 		super().__init__()
 
 
