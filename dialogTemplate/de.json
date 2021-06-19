@@ -24,7 +24,7 @@
 				"ich brauche online informationen über {Finnland:=>What}",
 				"gib mir informationen von {wikipedia:=>Engine} über {Barrack Obama:=>What}",
 				"kannst du bitte über {Nukleare Waffen:=>What} auf {wikipedia:=>Engine} suchen",
-				"gib mir informationen über {planets:=>What} online",
+				"gib mir informationen über {planeten:=>What} online",
 				"finde infos über {Mars:=>What}",
 				"ich brauche informationen über {Katzen:=>What}",
 				"kannst du bitte informationen über {Amerika:=>What} auf {wikipedia:=>Engine} suchen",
@@ -49,7 +49,7 @@
 				"mach eine suche auf {wikipedia:=>Engine}",
 				"bitte suche auf {wikipedia:=>Engine}",
 				"kannst du was nachschauen auf {wikipedia:=>Engine}",
-				"kannst du was auf{wikipedia:=>Engine} nachschauen",
+				"kannst du was auf {wikipedia:=>Engine} nachschauen",
 				"könntest du ein paar informationen online raussuchen",
 				"kannst ein paar infos online suchen",
 				"ich bräuchte dringend ein paar online informationen",
@@ -58,8 +58,8 @@
 				"was für infos von {wikipedia:=>Engine} hast du über {Mäuse:=>What}",
 				"gib mir mal ein paar fakten über {Ritter:=>What}",
 				"bitte schau nach informationen über {Snickers:=>What} auf {wikipedia:=>Engine}",
-				"Suche {wiki:=> Engine} nach {Laubfröschen:=> What}",
-				"Suche in {wiki:=> Engine} nach Informationen über {Australia:=> What}"
+				"Suche {wiki:=>Engine} nach {Laubfröschen:=>What}",
+				"Suche in {wiki:=>Engine} nach Informationen über {Australia:=>What}"
 			],
 			"slots": [
 				{
