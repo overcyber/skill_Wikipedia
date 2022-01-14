@@ -20,7 +20,8 @@
         "lang": [
             "en",
             "fr",
-            "de"
+            "de",
+	    "pt"
         ],
         "online": true
     }

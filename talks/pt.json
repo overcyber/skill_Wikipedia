@@ -1,0 +1,24 @@
+{
+	"ambiguous": {
+		"default": [
+			"I have found many results for this search. Please be more precise or try to spell the search word"
+		]
+	},
+	"dialogMessage1": {
+		"default": [
+			"That search was too vague but i found a possible alternative called. {0}"
+		]
+	},
+	"noMatch": {
+		"default": [
+			"Sorry, I couldn't find anything about <say-as interpret-as=\"interjection\">{}</say-as>. Try another request please"
+		]
+	},
+	"whatToSearch": {
+		"default": [
+			"Sure! What do you want me to search?",
+			"Of course! What shall I search",
+			"I can, of course, what do you want me to look for?"
+		]
+	}
+}
